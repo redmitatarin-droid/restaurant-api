@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RusNas Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script src="cart.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="brand">
+          <img
+            src="logo.png"
+            alt=""
+            class="brand-logo"
+            width="48"
+            height="48"
+          />
+          <div>
+            <h1>RusNas Restaurant</h1>
+            <p>Выбирай любимые блюда</p>
+          </div>
+        </div>
+
+        <nav class="navigation">
+          <button id="menu-button" type="button">Меню</button>
+          <button id="my-orders-button" type="button">Мои заказы</button>
+          <button id="admin-link" type="button" hidden>Admin</button>
+        </nav>
+      </div>
+
+      <div class="auth-area">
+        <span id="user-info">Вы не вошли в аккаунт</span>
+
+        <form id="login-form" class="login-form">
+          <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            autocomplete="username"
+            required
+          />
+
+          <input
+            id="password"
+            type="password"
+            placeholder="Пароль"
+            autocomplete="current-password"
+            required
+          />
+
+          <button type="submit">Войти</button>
+        </form>
+
+        <button id="logout-button" hidden>Выйти</button>
+        <p id="auth-message" role="status"></p>
+        <p class="registration-note">Регистрация пока недоступна.</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="menu-view">
+        <section id="menu-section">
+          <div class="menu-header">
+            <h2 id="menu-title">Наше меню</h2>
+          </div>
+          <section id="products" class="products">
+            <p>Загружаем меню...</p>
+          </section>
+        </section>
+
+        <section class="cart-section" id="cart">
+          <h2>Корзина (<span id="cart-count">0</span>)</h2>
+          <div id="cart-items">Корзина пока пуста.</div>
+          <div class="cart-summary">
+            <strong>Итого: <span id="cart-total">0 ₽</span></strong>
+            <button id="checkout-button" type="button">Оформить заказ</button>
+            <p id="checkout-message" role="status"></p>
+          </div>
+        </section>
+      </section>
+
+      <section id="my-orders" hidden>
+        <button id="back-to-menu" type="button">← Вернуться в меню</button>
+        <h2>Мои заказы</h2>
+        <div id="orders-list" class="orders-grid">Здесь будут ваши заказы.</div>
+      </section>
+    </main>
+  </body>
+</html>
+```

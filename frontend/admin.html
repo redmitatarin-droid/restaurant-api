@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Админ-панель — RusNas Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="admin.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div>
+          <h1>RusNas Restaurant</h1>
+          <p>Панель управления</p>
+        </div>
+
+        <nav class="navigation">
+          <a href="index.html">Вернуться в меню</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <h2>Заказы</h2>
+
+      <p id="admin-message">Проверяем права доступа...</p>
+
+      <button id="reload-orders" type="button" hidden>Обновить заказы</button>
+
+      <section id="orders-container" class="products"></section>
+    </main>
+  </body>
+</html>

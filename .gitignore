@@ -1,0 +1,22 @@
+
+# Секреты и локальные настройки
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Виртуальные окружения
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Тесты и покрытие
+.pytest_cache/
+.coverage
+htmlcov/
